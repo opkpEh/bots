@@ -1,6 +1,7 @@
 import pyautogui as pg
 import time
 
+#chrono crystal as when you play over and over sometimes your friendship levels up this is to click on that cc
 ccX= 1658
 ccY= 576
 ccR= 0
@@ -51,9 +52,3 @@ while True:
 
 
     time.sleep(4)
-    
-
-
-
-    
-    
