@@ -1,7 +1,13 @@
+# Hello, Change variables according to your screen
+# I used bluestacks kept on top right edge to edge
+# 1080 by 1920 resolution of my screen ( I had night light on, OS: windows 10)
+
 import pyautogui as pg
 import time
 
 time.sleep (5)
+
+#This clicks on the tab that starts the chapter (Eg Book 2,chapter 3)
 pg.click(1643,369)
 
 demoX= 1715
@@ -198,7 +204,7 @@ while True:
                 time.sleep(1)
 
     #clicking on the screen once for any anomalie
-    pg.click(500,500)
+    pg.click(1600,600)
 
     #clicking on ok
     if pg.pixel(OkMidX,OkMidY)[0]==  OkMidR:
