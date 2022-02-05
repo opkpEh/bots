@@ -1,3 +1,4 @@
+#I mostly used it for Part 6 ( marjin buu ) Part 1 , chapter 8 ( ssj 3 goku one for frinedship levels) and for gettings stuff for that white saibamen to get pizzas  
 import pyautogui as pg
 import time
 
