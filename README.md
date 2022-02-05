@@ -1,2 +1,2 @@
 # bots
-bots that I make 
+bots that I make for YOU! 
