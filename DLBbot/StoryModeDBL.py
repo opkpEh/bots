@@ -1,23 +1,25 @@
 # Hello, Change variables according to your screen
 # I used bluestacks kept on top right edge to edge
 # 1080 by 1920 resolution of my screen ( I had night light on, OS: windows 10)
-
+import keyboard
 import pyautogui as pg
 import time
 
-time.sleep (5)
-
-#This clicks on the tab that starts the chapter (Eg Book 2,chapter 3)
+#This clicks on the tab that starts the chapter (Eg Part 1, Book 2,chapter 3)
 pg.click(1643,369)
+time.sleep(4)
 
 demoX= 1715
 demoY= 696
+demoR=62
+demoG=33
+demoB=16
 
 StartBattleX= 1765
 StartBattleY= 734
-StartBattleR= 219
-StartBattleG= 145
-StartBattleB= 34
+StartBattleR= 176
+StartBattleG= 117
+StartBattleB= 32
 
 FirstslotAdvX = 1538
 FirstslotAdvY= 481
@@ -97,11 +99,11 @@ YesR= 219
 YesG= 145
 YesB= 34
 
-while True:
+while keyboard.read_key() != 'space':
     #click off demo
-    if pg.pixel(demoX,demoY)[0]== 252:
-        if pg.pixel(demoX,demoY)[1]== 204:
-            if pg.pixel(demoX,demoY)[2]== 54:
+    if pg.pixel(demoX,demoY)[0]== demoR:
+        if pg.pixel(demoX,demoY)[1]== demoG:
+            if pg.pixel(demoX,demoY)[2]== demoB:
                 pg.click(demoX,demoY)
 
     time.sleep(1)
@@ -184,9 +186,9 @@ while True:
         if pg.pixel(SkipX,SkipY)[1]== SkipG:
             if pg.pixel(SkipX,SkipY)[2]== SkipB:
                 pg.click(SkipX,SkipY)
-
-    #waiting for battle for atleast 10 seconds
-    time.sleep(10)
+        
+    #waiting for battle for atleast 20 
+    time.sleep(20)
 
     #checking for skip story button
     if pg.pixel(SkipX,SkipY)[0]==  SkipR:
@@ -242,6 +244,8 @@ while True:
                             pg.click(YesX,YesY)
 
                             time.sleep(4)
+
+    print("one loop done")
 
 #done!
 

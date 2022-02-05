@@ -1,15 +1,15 @@
 import pyautogui as pg
 import time
 
-X1= 1746
-Y1= 791
-R1= 223
-G1= 141
-B1= 37
+YesX1= 1746
+YesY1= 791
+R1= 219
+G1= 145
+B1= 34
 
 
-X2= 1750
-Y2= 539
+YesX2= 1750
+YesY2= 539
 R2= 229
 G2= 171
 B2= 28
@@ -20,23 +20,27 @@ tapButtonRGB1= 255
 
 while True:
 
-#tap button
+        #to click off any anomlie
+        pg.click(x=1652,y=791)
+
+
+        #tap button
         if pg.pixel(tapButtonX1,tapButtonY1)[0]== tapButtonRGB1:
                 if pg.pixel (tapButtonX1,tapButtonY1)[1]== tapButtonRGB1:
                         if pg.pixel(tapButtonX1,tapButtonY1) [2]== tapButtonRGB1:
                                  pg.click(x=tapButtonX1,y=tapButtonY1)
         time.sleep(1)
 
-        if pg.pixel(X1,Y1)[0]== R1:
-                if pg.pixel (X1,Y1)[1]== G1:
-                        if pg.pixel(X1,Y1) [2]== B1:
-                                 pg.click(x=X1,y=Y1)
+        if pg.pixel(YesX1,YesY1)[0]== R1:
+                if pg.pixel (YesX1,YesY1)[1]== G1:
+                        if pg.pixel(YesX1,YesY1) [2]== B1:
+                                 pg.click(x=YesX1,y=YesY1)
 
         time.sleep(0.4)
 
-        if pg.pixel (X2,Y2)[0]== R2:
-                if pg.pixel (X2,Y2)[1]== G2:
-                        if pg.pixel (X2,Y2) [2]== B2:
-                                pg.click(x=X2,y=Y2)
+        if pg.pixel (YesX2,YesY2)[0]== R2:
+                if pg.pixel (YesX2,YesY2)[1]== G2:
+                        if pg.pixel (YesX2,YesY2) [2]== B2:
+                                pg.click(x=YesX2,y=YesY2)
 	
 
